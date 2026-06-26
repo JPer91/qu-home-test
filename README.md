@@ -29,7 +29,7 @@ Install Playwright browsers:
 
 You will need to setup .env with following values:
 
-**Note: Normally I would not store values in the repo as it is a security risk. Due to this being a test exercise, I have added them here for convinience**
+**Note: Normally I would not store values in the repo as it is a security risk. Due to this being a test exercise, I have added them here for Convenience**
 
 `BASE_URL=http://localhost:3100`
 `LOGIN_USERNAME=johndoe19`
