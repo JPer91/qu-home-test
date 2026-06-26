@@ -1,0 +1,10 @@
+services:
+  test-runner:
+    build: .
+    working_dir: /app
+    environment:
+      - BASE_URL=http://host.docker.internal:3100
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    tty: true
+    stdin_open: true

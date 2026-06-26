@@ -1,0 +1,32 @@
+{
+  "name": "qu-home-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:selenium:docker": "docker compose run --rm -e LOGIN_USERNAME=johndoe19 -e LOGIN_PASSWORD=supersecret test-runner node --test Selenium/selenium-login.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPer91/qu-home-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JPer91/qu-home-test/issues"
+  },
+  "homepage": "https://github.com/JPer91/qu-home-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0",
+    "selenium-webdriver": "^4.45.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
